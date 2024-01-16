@@ -41,7 +41,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         $_SESSION["utilizator_utilizator"] = htmlspecialchars($rezultat["utilizator"]);
         $_SESSION['last_regeneration'] = time();
 
-        header("Location: ../index.php?login=succes");
+        // header("Location: ../index.php?login=succes");
+        header("Location: antrenor.php");
         $pdo = null;
         $stmt = null;
         die();
